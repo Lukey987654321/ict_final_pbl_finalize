@@ -1,0 +1,171 @@
+.problem_cards{
+    margin: 0;
+    background-color: #008170;
+    box-shadow: 0 8px 20px #008170a5 ;
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+.problem_cards:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px #008170a5;
+}
+.problem_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+.problem_title{
+    color: #008170;
+    text-align: center;
+    font-weight: bold;
+}
+.problem_sub_title{
+    font-weight: bold;
+}
+.problem_link{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+.problem_link:hover{
+    color: #e1fff5;
+}
+.problem_link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+.problem_link:hover::after{
+    width: 100%;
+} 
+@media (max-width: 992px){
+    .problem_img{
+        width: 100%;
+        height: 100%;
+    }
+}
+/* Matter CSS */
+.matter_title{
+    margin-top: 100px;
+}
+.matter_title, .matter_sub_title{
+    color: #008170;
+    text-align: center;
+    font-family: bookantique;
+    font-weight: bold;
+    z-index: 1000;
+}
+.matter_card{
+    border-radius: 25px;
+    border: solid 3px #008170;
+    box-shadow: 0 8px 70px #008170a5 ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+.matter_card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0, 129, 112, 0.4);
+}
+.matter_content{
+    font-family: glacialindifference;
+}
+
+/* Solution CSS */
+.solution_title{
+    text-align: center;
+    color: #005146;
+    margin-top: 100px;
+    font-weight: bold;
+    font-family: glacialindifference;
+}
+.solution_card{
+    position: relative;
+    background-color: #83dbbe;
+    border: 3px solid #005146;
+    margin-top: 50px;
+    padding: 80px 25px 30px;
+    text-align: center;
+    height: 85%;
+    transition: 0.3s ease;
+}
+.solution_card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 88, 79, 0.3);
+}
+.solution_icon{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #83dbbe;
+    border: 3px solid #005146;
+    font-size: 45px;
+    color: #005146;
+}
+.solution_sub_title{
+    color: #005146;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: bookantique;
+}
+.solution_content{
+    color: black;
+    margin-top: 10px;
+}
+.solution_btn{
+    margin-top: 20px;
+    background-color: #005146;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.solution_btn:hover{
+    background-color: #007563;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 81, 70, 0.2);
+}
+/* Question Modal CSS */
+.modal-content{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 81, 70, 0.2);
+}
+.modal-header{
+    background-color: #005146;
+    color: white;
+    border-bottom: none;
+}
+.modal-title{
+    font-family: glacialindifference;
+    font-weight: bold;
+}
+.modal-body{
+    background-color: #e1fff5;
+    font-family: glacialindifference;
+    color: black;
+}
+.modal-footer{
+    background-color: #e1fff5;
+    border-top: none;
+}
+.btn{
+    background-color: #005146;
+    border: none;
+}
+.btn:hover{
+    background-color: #007563;
+}

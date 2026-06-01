@@ -1,0 +1,198 @@
+.unsafe_food_container{
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+
+
+.unsafe_food_sidebar{
+    min-width: 220px;
+    position: sticky;
+    top: 20px;
+    padding: 16px;
+    height: fit-content;
+    z-index: 100;
+    transition: 0.3s ease;
+    border-radius: 30px;
+}
+
+
+.scroll-area{
+    position: relative;
+    height: 85vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.section{
+    padding-top: 80px;
+    margin-top: -80px;
+    margin-bottom: 60px;
+}
+
+.unsafe_food_card{
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.unsafe_food_header_subtopic {
+    display: inline-block; 
+    padding: 8px 20px;
+    border-radius: 999px;
+
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.unsafe_food_card:hover{
+    transform: translateY(-6px);
+    border-color: rgba(0,230,184,0.3);
+}
+
+.unsafe_food_move_button {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.268);
+    transform: translateY(-6px);
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.467);
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    height: 50px;
+    padding: 0 20px;
+    background: #00817095;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    text-decoration: none;
+}
+
+.unsafe_food_move_button:hover {
+    transform: translateY(0px);
+    box-shadow: 0px 0px 0px black;
+}
+
+.unsafe_food_move_button.active {
+    transform: translateY(0px) !important;
+    box-shadow: 0px 0px 0px black !important;
+}
+
+
+
+.unsafe_food_card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.unsafe_food_card:hover img {
+    transform: translateY(-6px) scale(1.1);
+}
+
+
+.unsafe_food_title{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: rgba(0,230,184,0.15);
+    color: #00e6b8;
+    font-weight: 600;
+}
+
+
+@media(max-width: 992px){
+    .unsafe_food_sidebar{ 
+        display:none; 
+    
+    }
+}
+
+.mobile_tap_pane_button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #76a395;
+    position: fixed;  
+    bottom: 20px;
+    left: 20px;
+    transition: all 0.4s ease;
+    animation: float 3s ease-in-out infinite;
+    border: 0px;
+    z-index: 1000;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.08);;
+
+}
+
+.mobile_tap_pane_button:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
+
+.unsafe_food_sidebar_mobile a:hover, .unsafe_food_sidebar_mobile a.active{
+    background: rgba(0,230,184,0.15) !important;
+    color: #00e6b8 !important;
+    opacity: 1;
+}
+.unsafe_food_sidebar_mobile {
+    min-width: 220px;
+    z-index: 1100;
+    top: 20px;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+    font-weight: 500;
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.12);
+    height: fit-content;
+}
+
+.unsafe_food_sidebar_mobile a{
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 566px) {
+    .unsafe_food_main_container {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .unsafe_food_main_container {
+        padding: 0px !important;
+    }
+}

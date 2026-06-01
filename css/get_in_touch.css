@@ -1,0 +1,316 @@
+    body{
+        background: #f4faf7;
+    }
+
+    .contact-hero {
+        padding: 60px 20px 60px;
+        text-align: center;
+
+    }
+
+    /* small badge */
+    .contact-badge {
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 50px;
+        background: #e6f4f0;
+        color: #005146;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    /* main title */
+    .contact-title {
+        font-size: 52px;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 15px;
+        line-height: 1.1;
+    }
+
+    /* green highlight word */
+    .contact-title span {
+        color: #005146;
+        position: relative;
+    }
+
+    /* optional underline glow effect */
+    .contact-title span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 5px;
+        background: rgba(131, 219, 190, 0.4);
+        z-index: -1;
+        border-radius: 6px;
+    }
+
+    /* description */
+    .contact-desc {
+        font-size: 16px;
+        color: #64748b;
+        max-width: 650px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+
+    .about_contact_section{
+        padding: 30px 0;
+    }
+
+    /* Top Cards */
+
+    .info_card{
+        background: white;
+        border-radius: 24px;
+        padding: 35px;
+        text-align: center;
+        border: 1px solid rgba(0,0,0,0.05);
+        transition: 0.4s;
+        height: 100%;
+    }
+
+    .info_card:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    .info_icon{
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        border-radius: 18px;
+        background: linear-gradient(135deg,#008170,#00b89c);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .info_card h4{
+        font-size: 24px;
+        font-weight: 800;
+        color: #111;
+    }
+
+    .info_card p{
+        color: #666;
+        line-height: 1.8;
+        margin-top: 10px;
+    }
+
+    /* Main Box */
+
+    .main_box{
+        background: white;
+        border-radius: 30px;
+        padding: 50px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.05);
+        height: 100%;
+    }
+
+    .mini_tag{
+        display: inline-block;
+        background: rgba(0,129,112,0.1);
+        color: #008170;
+        padding: 10px 20px;
+        border-radius: 40px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .main_box h2{
+        font-size: 48px;
+        font-weight: 900;
+        color: #111;
+    }
+
+    .main_box h2 span{
+        color: #008170;
+    }
+
+    .main_box p{
+        color: #666;
+        line-height: 1.9;
+        margin-top: 18px;
+    }
+
+    /* Form */
+
+    .form-label{
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 18px;
+        color: #111;
+    }
+
+    .form-control{
+        border-radius: 14px;
+        padding: 15px;
+        border: 1px solid #dce7e2;
+        margin-top: 8px;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    .submit_btn{
+        width: 100%;
+        border: none;
+        margin-top: 28px;
+        padding: 16px;
+        border-radius: 14px;
+        font-weight: 700;
+        background: linear-gradient(135deg,#008170,#00b89c);
+        color: white;
+        transition: 0.4s;
+    }
+
+    .submit_btn:hover{
+        transform: translateY(-4px);
+        box-shadow: 0 12px 25px rgba(0,129,112,0.25);
+    }
+
+    /* Side Cards */
+
+    .side_card{
+        border-radius: 26px;
+        padding: 35px;
+        margin-bottom: 25px;
+    }
+
+    .vision_card{
+        background: linear-gradient(135deg,#008170,#00b89c);
+        color: white;
+    }
+
+    .vision_card p{
+        color: rgba(255,255,255,0.85);
+        line-height: 1.9;
+    }
+
+    .mission_card{
+        background: #0f172a;
+        color: white;
+    }
+
+    .mission_card p{
+        color: rgba(255,255,255,0.8);
+        line-height: 1.9;
+    }
+
+    .side_card h4{
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 18px;
+    }
+
+    /* Social Box */
+
+    .social_box{
+        background: white;
+        border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .social_icons{
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social_icons a{
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        background: #f4faf7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #008170;
+        font-size: 20px;
+        transition: 0.4s;
+        text-decoration: none;
+    }
+
+    .social_icons a:hover{
+        background: linear-gradient(135deg,#008170,#00b89c);
+        color: white;
+        transform: translateY(-5px);
+    }
+    /* Team Section */
+
+    .team_heading{
+        font-size: 52px;
+        font-weight: 900;
+        color: #111;
+        margin-top: 20px;
+    }
+
+    .team_text{
+        color: #666;
+        margin-top: 15px;
+        line-height: 1.8;
+    }
+
+    /* Member Card */
+
+    .member_card{
+        background: white;
+        border-radius: 28px;
+        overflow: hidden;
+        transition: 0.4s;
+        border: 1px solid rgba(0,0,0,0.05);
+        height: 100%;
+    }
+
+    .member_card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    }
+
+    .member_image{
+        overflow: hidden;
+    }
+
+    .member_image img{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    .member_card:hover .member_image img{
+        transform: scale(1.06);
+    }
+
+    .member_content{
+        padding: 28px;
+        text-align: center;
+    }
+
+    .member_content h4{
+        font-size: 24px;
+        font-weight: 800;
+        color: #111;
+    }
+    
+    @media(max-width:768px){
+
+        .main_box{
+            padding: 35px;
+        }
+
+        .main_box h2{
+            font-size: 36px;
+        }
+
+    }
